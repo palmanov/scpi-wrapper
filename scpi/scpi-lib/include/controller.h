@@ -50,20 +50,18 @@ class Controller : public QObject
    * @param external_request Запрос с внешнего API
    */
   void receiveExternalRequest(const QByteArray& external_request);
-
- private slots:
-  /**
-   * @brief Слот обработки телеметрии
-   *
-   * @param message Телеметрия
-   */
-  void receiveMeasureFromDevice(const QString& message);
   /**
    * @brief Слот для обработки ответа на запрос
    *
    * @param message Ответ
    */
   void receiveResponseFromDevice(const QString& message);
+  /**
+   * @brief Слот обработки телеметрии
+   *
+   * @param message Телеметрия
+   */
+  void receiveMeasureFromDevice(const QString& message);
 
  signals:
   /**

@@ -1,7 +1,4 @@
-
 #include <gtest/gtest.h>
-
-#include "controller.h"
 
 int main(int argc, char *argv[])
 {

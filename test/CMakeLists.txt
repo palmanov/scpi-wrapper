@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(external_api_test LANGUAGES CXX)
+project(scpi-tests LANGUAGES CXX)
 
 enable_testing()
 
@@ -25,8 +25,9 @@ include_directories(../scpi/scpi-lib/include)
 target_link_libraries(GTest::GTest INTERFACE gtest_main)
 target_link_libraries(GMock::GMock INTERFACE gmock_main)
 
-add_executable(external_api_test main.cpp tst_external_api.cpp)
+add_executable(scpi-tests main.cpp tst_external_api.cpp tst_processing_response.cpp)
 
-target_link_libraries(external_api_test PRIVATE Qt${QT_VERSION_MAJOR}::Test GTest::GTest GMock::GMock scpi-lib)
+target_link_libraries(scpi-tests PRIVATE Qt${QT_VERSION_MAJOR}::Test GTest::GTest GMock::GMock scpi-lib)
 
 add_test(NAME external_api COMMAND external_api)
+add_test(NAME processing_response COMMAND processing_response)

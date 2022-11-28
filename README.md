@@ -1,5 +1,5 @@
-[![CMake](https://github.com/palmanov/scpi-wrapper/actions/workflows/cmake.yml/badge.svg)](https://github.com/palmanov/scpi-wrapper/actions/workflows/cmake.yml)
 # SCPI Wrapper
+[![CMake](https://github.com/palmanov/scpi-wrapper/actions/workflows/cmake.yml/badge.svg)](https://github.com/palmanov/scpi-wrapper/actions/workflows/cmake.yml)
 
 ![alt text](pic1.png "Демонстрация работы")
 

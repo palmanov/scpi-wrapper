@@ -5,6 +5,8 @@
 #include <QTimer>
 #include <QFile>
 
+#include <memory>
+
 namespace scpi {
 
 /**
